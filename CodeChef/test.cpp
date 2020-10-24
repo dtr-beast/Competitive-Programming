@@ -9,6 +9,7 @@ int main(int argc, char const *argv[])
         freopen("output.txt", "w", stdout);
     #endif
     
+    
     int n;
     cin >> n;
     cout << n;

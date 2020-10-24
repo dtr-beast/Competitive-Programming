@@ -1,0 +1,10 @@
+GoodVal
+BadVal
+10
+BadVal
+Not Found!
+auto
+Not Found!
+Not Found!
+Not Found!
+Not Found!
