@@ -2,9 +2,8 @@
 # Created by https://www.toptal.com/developers/gitignore/api/windows,c++,vscode,sublimetext
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,c++,vscode,sublimetext
 
-# output and input files
-**/1input.txt
-**/1output.txt
+# Output and Input files
+*.txt
 
 # Video Files
 *.mp4
@@ -112,7 +111,3 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,c++,vscode,sublimetext
-🔴 GUIDE for COMPETITIVE PROGRAMMING - RESOURCES - EXCEL YOURSELF.mp4
-Learn C++ STL in 45 minutes - Containers - Algorithms - Comparators - Competitive Programming.mp4
-HackerEarth/1input.txt
-HackerEarth/1output.txt
