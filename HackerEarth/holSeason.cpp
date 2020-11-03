@@ -15,13 +15,32 @@ signed main()
 #endif
 	fastio
 
-	int t, a, b, c;
-	cin >> t;
-	while (t--)
+	int n;
+	string s1;
+	cin >> n;
+	char c;
+	map<char, int> smap;
+	for (int i = 0; i < n; i++)
 	{
-		c = 0;
-
+		cin >> c;
+		if (smap.find(c) == smap.end())
+		{
+			smap.insert(pair<char, int>(c, 1));
+		}
+		else
+		{
+			smap[c]++;
+		}
 	}
-
+	// for (auto i = smap.begin(); i != smap.end(); i++)
+	// {
+	// 	cout << i->first << ": " << i->second << "\n";
+	// }
+	int count = 0;
+	for (auto i = smap.begin(); i != smap.end(); i++)
+	{
+		count += i -> second / 2;
+	}
+	cout << count;
 	return 0;
 }

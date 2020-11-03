@@ -1,5 +1,5 @@
-// https://codeforces.com/problemset/problem/58/A
-// d20bdb472fd124cefabed101b434f4d0c6fb83224ab11e0d4b0ba80d2eb7013b
+// https://codeforces.com/problemset/problem/136/A
+// TODO
 #include <bits/stdc++.h>
 #define fastio ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0);
 #define double long double
@@ -15,9 +15,14 @@ signed main()
 #endif
 	fastio
 
-    string s;
-    cin >> s;
-    regex b(".*h+.*e+.*l+.*l+.*o+.*");
-    cout << ((regex_match(s, b)) ? "YES" : "NO") << "\n";
+	int t;
+	cin >> t;
+    vector <int> pres;
+	pres.resize(t);
+    for (int i = 0; i < t; i++)
+    {
+        cin >> pres[i];
+    }
+    
 	return 0;
 }

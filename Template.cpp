@@ -14,11 +14,12 @@ signed main()
 #endif
 	fastio
 
-	int t, a, b, c;
+	int t, a, b, c, count;
+	string s1, s2, s3;
 	cin >> t;
 	while (t--)
 	{
-		c = 0;
+		count = 0;
 
 	}
 
