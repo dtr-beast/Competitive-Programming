@@ -6,6 +6,10 @@
 **/1input.txt
 **/1output.txt
 
+# Video Files
+*.mp4
+*.mkv
+
 ### C++ ###
 # Prerequisites
 *.d
