@@ -1,4 +1,5 @@
-// 
+// https://practice.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k/0
+// TODO
 #include <bits/stdc++.h>
 #define fastio ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0);
 #define double long double
@@ -15,14 +16,21 @@ signed main()
 #endif
 	fastio
 
-	int t, a, b, c, count;
-	string s1, s2, s3;
+	int t, n, k, c, count;
 	cin >> t;
 	while (t--)
 	{
-		count = 0;
+        cin >> n;
+        vector <int> arr(n);
+        for (int i = 0; i < n; i++)
+        {
+            cin >> arr[i];
+        }
+        cin >> k;
+        for (int i = 0, j = k; i < n; i++)
+        {
 
+        }
 	}
-
 	return 0;
 }

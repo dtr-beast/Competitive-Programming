@@ -21,7 +21,7 @@ signed main()
     for (int i = 0; i < t; i++)
     {
         cin >> sol[i];
-        if (max <= sol[i])
+        if (max < sol[i])
         {
             max = sol[i];
             maxi = i;
