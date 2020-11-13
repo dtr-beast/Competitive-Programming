@@ -1,5 +1,4 @@
-//
-//
+// 
 #include <bits/stdc++.h>
 #define fastio ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0);
 #define double long double
@@ -16,14 +15,14 @@ signed main()
 #endif
 	fastio
 
-	int t, a, b, c, count;
-	string s1, s2, s3;
-	cin >> t;
-	while (t--)
-	{
-		count = 0;
+    stringstream s("23,4,56");
+    string s1 = "asdf";
+    string s2 = "by";
+    // s1.replace(0, 1, 'x');
+    cout << s1;
+    swap(s1[0], s2[0]);
+    int x = 5;
 
-	}
 
 	return 0;
 }
