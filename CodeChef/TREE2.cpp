@@ -1,4 +1,4 @@
-// https://www.codechef.com/problems/SPLITIT
+// https://www.codechef.com/problems/TREE2
 // 
 #include <bits/stdc++.h>
 #define fastio ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0);
@@ -16,29 +16,27 @@ signed main()
 #endif
     fastio
 
-    int t, len;
-    string s1;
-    char c;
+    int t, n, x;
     cin >> t;
     while (t--)
     {
-        cin >> len;
-        cin >> s1;
-        c = *s1.rbegin();
-        bool yes = false;
-        for (int i = 0; i < s1.length() - 1; i++)
+        cin >>  n;
+        set <int> nums;     // Count the distinct number of elements except zero
+        for (int i = 0; i < n; i++)
         {
-            if (c == s1[i])
-            {
-                cout << "YES\n";
-                yes = true;
-                break;
-            }
+            cin >> x;
+            nums.insert(x); 
         }
-        if (!yes)
+
+        if (nums.find(0) == nums.end())
         {
-            cout << "NO\n";
+            x = nums.size();
         }
+        else
+        {
+            x = nums.size() - 1;
+        }
+        cout << x endl
     }
     return 0;
 }
