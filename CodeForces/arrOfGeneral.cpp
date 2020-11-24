@@ -1,4 +1,7 @@
 // https://codeforces.com/problemset/problem/144/A
+// Arrival of the General
+// A2OJ
+
 #include <bits/stdc++.h>
 #define fastio ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0);
 #define double long double

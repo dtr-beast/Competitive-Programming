@@ -1,5 +1,5 @@
 // https://www.codechef.com/problems/TREE2
-// 
+// Seen Editorial
 #include <bits/stdc++.h>
 #define fastio ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0);
 #define double long double
