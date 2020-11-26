@@ -11,6 +11,7 @@
 using namespace std;
 
 // Important: Defining default arguments in declaration 
+// bool isPerfRoot(double, bool = true);
 bool isPerfRoot(double);
 
 signed main()
@@ -25,7 +26,6 @@ signed main()
     cin >> t;
     while (t--)
     {
-        int z = 0;
         count = 0;
         cin >> n;
         vector <double> a(n);
