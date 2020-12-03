@@ -12,6 +12,7 @@ using namespace std;
 signed main()
 {
     fastio
+    value <int> a;
     vector<vector<int>> t;
     t.push_back({2, 2});
     return 0;

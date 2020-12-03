@@ -5,6 +5,10 @@
 # Output and Input files
 *.txt
 
+# binary files
+*.bin
+
+.cph
 # Video Files
 *.mp4
 *.mkv
