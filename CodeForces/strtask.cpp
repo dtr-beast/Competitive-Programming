@@ -1,5 +1,6 @@
 // https://codeforces.com/problemset/problem/118/A
-// TODO
+// String Task
+// A2OJ
 #include <bits/stdc++.h>
 #define fastio ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0);
 #define double long double
@@ -15,22 +16,20 @@ signed main()
 #endif
     fastio
 
-        string t,
-        out;
-    cin >> t;
-    transform(t.begin(), t.end(), t.begin(), ::tolower);
+    string s1;
+    cin >> s1;
+    transform(s1.begin(), s1.end(), s1.begin(), ::tolower);
 
-    for (int i = 0; i < t.length(); i++)
+    for (int i = 0; i < s1.size(); i++)
     {
-        if (t[i] == 'a' || t[i] == 'o' || t[i] == 'y' || t[i] == 'e' || t[i] == 'u' || t[i] == 'i')
+        if (s1[i] == 'a' || s1[i] == 'o' || s1[i] == 'y' || s1[i] == 'e' || s1[i] == 'u' || s1[i] == 'i')
         {
-            t.erase(t.begin() + i);
+            continue;
         }
         else
         {
-            t.insert(t.begin() + i, '.');
+            cout << '.' << s1[i];
         }
     }
-    cout << t;
     return 0;
 }

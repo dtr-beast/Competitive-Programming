@@ -5,6 +5,9 @@
 # Output and Input files
 *.txt
 
+# cph folder
+.cph
+
 # binary files
 *.bin
 
