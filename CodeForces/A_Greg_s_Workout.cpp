@@ -1,7 +1,6 @@
 // https://codeforces.com/problemset/problem/255/A
 // Greg's Workout
 // A2OJ
-// TDOD
 #include <bits/stdc++.h>
 #define fastio ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0);
 #define double long double

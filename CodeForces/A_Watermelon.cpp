@@ -1,5 +1,5 @@
-// https://codeforces.com/problemset/problem/114/A
-// Cifera
+// https://codeforces.com/problemset/problem/4/A
+// Watermelon
 // A2OJ
 #include <bits/stdc++.h>
 #define fastio ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0);
@@ -12,20 +12,17 @@ using namespace std;
 signed main()
 {
 	fastio
-    double a, b;
-    cin >> a;
-    cin >> b;
 
-    double x = log(b) / log(a);
-    if ((int) x == x)
-    {
-        cout << "YES\n";
-        cout << (max(x - 1, (double) 0));
-    }
-    else
+	int a;
+    cin >> a;
+    if (a == 2)
     {
         cout << "NO\n";
     }
-
+    else
+    {
+        cout << ((a & 1) ? "NO\n" : "YES\n");
+    }
+    
 	return 0;
 }
