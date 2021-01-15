@@ -1,6 +1,7 @@
 // https://codeforces.com/problemset/problem/114/A
 // Cifera
 // A2OJ
+// TODO
 #include <bits/stdc++.h>
 #define fastio ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0);
 #define double long double
@@ -20,11 +21,11 @@ signed main()
     if ((int) x == x)
     {
         cout << "YES\n";
-        cout << (max(x - 1, (double) 0));
+        cout << x - 1;
     }
     else
     {
-        cout << "NO\n";
+        cout << "NO";
     }
 
 	return 0;
