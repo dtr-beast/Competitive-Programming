@@ -3,10 +3,14 @@ using namespace std;
 
 int main()
 {
-    double x = 5.1;
-    int a = 5;
-    cout << (x == a);
-    cout << (log(25) / log(6));
-    cout << "\n" << (double) 0;
+    
+    vector <int> v(2);
+    v[0] = 2;
+    v[1] = 5;
+    cout << v.front() << " " << v.back(); 
+    
     return 0;
 }
+
+// cout <<__builtin_popcount(29);
+// cout << (2 ^ 1);
