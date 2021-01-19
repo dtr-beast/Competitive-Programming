@@ -13,26 +13,25 @@ signed main()
 {
 	fastio
 
-	int t, max = INT64_MIN, min = INT64_MAX, maxi, mini;
-	cin >> t;
-    vector <int> sol;
-    sol.resize(t);
-    for (int i = 0; i < t; i++)
+	int n, max = INT64_MIN, min = INT64_MAX, maxi, mini;
+	cin >> n;
+    vector <int> v(n);
+    for (int i = 0; i < n; i++)
     {
-        cin >> sol[i];
-        if (max < sol[i])
+        cin >> v[i];
+        if (max < v[i])
         {
-            max = sol[i];
+            max = v[i];
             maxi = i;
         }
-        if (min >= sol[i])
+        if (min >= v[i])
         {
-            min = sol[i];
+            min = v[i];
             mini = i;
         }
     }
-    t--;
-    int time = (t - mini) + maxi;
+    n--;
+    int time = (n - mini) + maxi;
     if (mini < maxi)
     {
         --time;

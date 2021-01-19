@@ -1,7 +1,6 @@
-// https://codeforces.com/problemset/problem/136/A
-// Presents
+// https://codeforces.com/problemset/problem/224/A
+// Parallelepiped
 // A2OJ
-// TODO
 #include <bits/stdc++.h>
 #define fastio ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0);
 #define double long double
@@ -14,14 +13,15 @@ signed main()
 {
 	fastio
 
-	int t;
-	cin >> t;
-    vector <int> pres;
-	pres.resize(t);
-    for (int i = 0; i < t; i++)
-    {
-        cin >> pres[i];
-    }
-    
+    double x, y, z;
+
+    cin >> x >> y >> z;
+
+    double a = sqrt((x * y) / z),
+    b = sqrt((z * x) / y),
+    c = sqrt((z * y) / x);
+
+    cout << 4 * (a + b + c);
+
 	return 0;
 }

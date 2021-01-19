@@ -17,7 +17,7 @@ signed main()
     cin >> m >> n;
 
     // Min Value
-    int x = (m < n) ? m : n; 
+    int x = min(m, n); 
     
     // If x is odd then Akshat will win
 	cout << ((x & 1) ? "Akshat" : "Malvika"); 
