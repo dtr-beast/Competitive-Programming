@@ -1,5 +1,12 @@
+/*
+ * @lc app=leetcode id=707 lang=cpp
+ *
+ * [707] Design Linked List
+ */
+// TODO
 #include <bits/stdc++.h>
-using namespace std;
+// @lc code=start
+using std::cout;
 class Node
 {
 public:
@@ -33,7 +40,7 @@ public:
             return -1;
         }
         Node *tempNode = head;
-        while (index--)
+        for (int i = 0; i <= index; i++)
         {
             tempNode = tempNode->next;
         }
@@ -73,7 +80,7 @@ public:
         }
 
         Node *tempNode = head;
-        for (int i = 1; i < index; i++)
+        for (int i = 0; i < index; i++)
         {
             tempNode = tempNode->next;
         }
@@ -95,7 +102,7 @@ public:
 
         Node *tempNode = head;
 
-        for (int i = 1; i < index; i++)
+        for (int i = 0; i < index; i++)
         {
             tempNode = tempNode->next;
         }
@@ -118,20 +125,34 @@ public:
         cout << "\n";
     }
 };
+
+/**
+ * Your MyLinkedList object will be instantiated and called as such:
+ * MyLinkedList* obj = new MyLinkedList();
+ * int param_1 = obj->get(index);
+ * obj->addAtHead(val);
+ * obj->addAtTail(val);
+ * obj->addAtIndex(index,val);
+ * obj->deleteAtIndex(index);
+ */
+// @lc code=end
+
 int main()
 {
-    string s1 = "11111";
 
-    cout << (string::npos != s1.find('8'));
+    MyLinkedList myLinkedList = MyLinkedList();
+    myLinkedList.addAtHead(1);
+    myLinkedList.addAtTail(3);
+    myLinkedList.print();
+    myLinkedList.addAtIndex(1, 2); // linked list becomes 1->2->3
+    myLinkedList.print();
+    cout << myLinkedList.get(1) << "\n"; // return 2
+    myLinkedList.deleteAtIndex(1);       // now the linked list is 1->3
+    cout << myLinkedList.get(1) << "\n"; // return 3
+    myLinkedList.print();
     return 0;
 }
-
-// cout << pow(10, 1.0/2);
-
-// cout <<__builtin_popcount(29);
-// cout << (2 ^ 1);
-
-// vector <int> v(2);
-// v[0] = 2;
-// v[1] = 5;
-// cout << v.front() << " " << v.back();
+// Node *head = new Node(3);
+// Node *last = new Node(5);
+// head->next = last;
+// cout << head->value << " " << head->next->value;

@@ -15,21 +15,27 @@ public:
         {
             return false;
         }
-        for (int i = 0, j = len - 1; j >= i; i++, j--)
+        int i;
+
+        for(i = 0; i < arr.size() - 1; i++)
         {
-            if (arr[i] < arr[i + 1] || arr[j] < arr[j - 1])
+            if (arr[i] >= arr[i + 1])
             {
-                if (i == j - 1)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+                break;
             }
         }
-        return true;
+        if (i == 0 || i == arr.size() - 1)
+        {
+            return false;
+        }
+        for (; i < arr.size() - 1; i++)
+        {
+            if (arr[i] <= arr[i + 1])
+            {
+                break;
+            }
+        }
+        return (i == arr.size() - 1);
     }
 };
 // @lc code=end

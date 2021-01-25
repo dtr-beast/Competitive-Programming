@@ -17,7 +17,8 @@ signed main()
 {
     fastio
 
-    int n, m;
+        int n,
+        m;
 
     cin >> n >> m;
     vector<vector<char>> v(n);

@@ -5,28 +5,24 @@
  */
 
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-    void deleteElement(vector<int>& v, int index)
+    int removeElement(vector<int> &nums, int val)
     {
-        for (int i = index; i < v.size() - 1; i++)
-        {
-            v[i] = v[i + 1];
-        }
-    }
-    int removeElement(vector<int>& nums, int val) 
-    {
+        
         int len = nums.size();
-        for (int i = nums.size() - 1; i >= 0; i--)
+        int index = 0;
+
+        for (int i = 0; i < len; i++)
         {
-            if (nums[i] == val)
+            if (nums[i] != val)
             {
-                deleteElement(nums, i);
-                len--;
+                nums[index++] = nums[i];
             }
         }
-        return len;
+
+        return index;
     }
 };
 // @lc code=end
-
