@@ -14,14 +14,21 @@ signed main()
 {
 	fastio
 
-	int t, n, k, x, y, z, count;
-	string s1, s2, s3;
-	cin >> t;
-	while (t--)
-	{
-		count = 0;
+	int n;
+	cin >> n;
 
+	// Important: Declare a 2D vector with size for both dimensions
+	vector<vector<char>> v(n, vector<char>(n));
+
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < n; j++)
+		{
+			cin >> v[i][j];
+		}
 	}
+
+	
 
 	return 0;
 }
