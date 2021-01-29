@@ -120,9 +120,7 @@ public:
 };
 int main()
 {
-    string s1 = "11111";
-
-    cout << (string::npos != s1.find('8'));
+    cout << __gcd(2, 3);
     return 0;
 }
 
