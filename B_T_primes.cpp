@@ -17,7 +17,11 @@ signed main()
 {
     fastio
 
+<<<<<<< HEAD
     unsigned int n;
+=======
+        unsigned int n;
+>>>>>>> d15a3b624f219d9e529dd49f4445b0c4054db8a3
     cin >> n;
 
     unsigned int x, divisors;
