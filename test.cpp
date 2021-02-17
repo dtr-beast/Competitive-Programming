@@ -2,11 +2,9 @@
 using namespace std;
 int main()
 {
-    int x;
-    cin >> x;
-    string s1;
-    getline(cin, s1);
-    getline(cin, s1);
+    char c = '9';
+    int x = c;
+    cout << x;
     return 0;
 }
 
