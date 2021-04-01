@@ -2,9 +2,11 @@
 using namespace std;
 int main()
 {
-    char c = '9';
-    int x = c;
-    cout << x;
+    // char c = '9';
+    // int x = c;
+    // cout << x;
+    int max;
+    cout << max;
     return 0;
 }
 
