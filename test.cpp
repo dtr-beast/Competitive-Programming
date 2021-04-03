@@ -5,8 +5,9 @@ int main()
     // char c = '9';
     // int x = c;
     // cout << x;
-    int max;
-    cout << max;
+    cout << 15e9 + 7;
+    // int max;
+    // cout << max;
     return 0;
 }
 
