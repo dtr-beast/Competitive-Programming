@@ -12,7 +12,7 @@ using namespace std;
 
 signed main()
 {
-	fastio
+	fastio;
 
 	int n;
 	cin >> n;
