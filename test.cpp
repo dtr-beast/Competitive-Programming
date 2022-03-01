@@ -2,21 +2,38 @@
 using namespace std;
 int main()
 {
-    // char c = '9';
-    // int x = c;
-    // cout << x;
-    cout << 15e9 + 7;
-    // int max;
-    // cout << max;
+    int n;
+    cin >> n;
+
+    cout << 1 << "\n";
+    if (n <= 1)
+        return 0;
+
+    cout << "1 1\n";
+    vector<int> num(2, 1);
+
+    for (int i = 2; i < n; i++)
+    {
+        vector<int> nextNum;
+        int c = 1;
+        int j;
+        for (j = 1; j < num.size(); j++)
+        {
+            if (num[j - 1] == num[j])
+                c++;
+            else
+            {
+                nextNum.push_back(c);
+                nextNum.push_back(num[j - 1]);
+                cout << c << " " << num[j - 1] << " ";
+                c = 1;
+            }
+        }
+        nextNum.push_back(c);
+        nextNum.push_back(num[j - 1]);
+        cout << c << " " << num[j - 1];
+        cout << "\n";
+        num = nextNum;
+    }
     return 0;
 }
-
-// cout << pow(10, 1.0/2);
-
-// cout <<__builtin_popcount(29);
-// cout << (2 ^ 1);
-
-// vector <int> v(2);
-// v[0] = 2;
-// v[1] = 5;
-// cout << v.front() << " " << v.back();
